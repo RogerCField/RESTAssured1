@@ -1,0 +1,506 @@
+2024-06-17T08:44:02,268 [main] INFO  (Logger.java:112) - [TestNG] Running:
+  C:\Users\roger\Development\Java\RESTAssured1\suites\restassuredapitest.xml
+
+2024-06-17T08:44:02,656 [main] INFO  (APITests.java:18) - test1 Test Execution started...
+2024-06-17T08:44:03,902 [main] INFO  (RestAssuredListener.java:22) - 
+ Method GET
+ URI => https://reqres.in/api/users?page=2
+ Request body => null
+ Response body => {
+    "page": 2,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "first_name": "Michael",
+            "last_name": "Lawson",
+            "avatar": "https://reqres.in/img/faces/7-image.jpg"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "first_name": "Lindsay",
+            "last_name": "Ferguson",
+            "avatar": "https://reqres.in/img/faces/8-image.jpg"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "first_name": "Tobias",
+            "last_name": "Funke",
+            "avatar": "https://reqres.in/img/faces/9-image.jpg"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "first_name": "Byron",
+            "last_name": "Fields",
+            "avatar": "https://reqres.in/img/faces/10-image.jpg"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://reqres.in/img/faces/11-image.jpg"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "first_name": "Rachel",
+            "last_name": "Howell",
+            "avatar": "https://reqres.in/img/faces/12-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2024-06-17T08:44:03,970 [main] INFO  (BaseTest.java:30) - java.lang.AssertionError: 1 expectation failed.
+Expected header "Content-Type" was not "application/json;charset=utf-8", was "application/json; charset=utf-8". Headers are:
+Date=Mon, 17 Jun 2024 07:44:02 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1716485111&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4lyGvsMC5h1HM4Lws1fKmubJ663eaIwFS4HPt8eEJOw%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1716485111&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4lyGvsMC5h1HM4Lws1fKmubJ663eaIwFS4HPt8eEJOw%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+Access-Control-Allow-Origin=*
+Etag=W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+Via=1.1 vegur
+Cache-Control=max-age=14400
+CF-Cache-Status=HIT
+Age=6744
+Vary=Accept-Encoding
+Server=cloudflare
+CF-RAY=8951697c8c00948e-LHR
+Content-Encoding=gzip
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.header(ResponseSpecificationImpl.groovy:191)
+	at io.restassured.specification.ResponseSpecification$header$2.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+	at io.restassured.internal.ResponseSpecificationImpl.header(ResponseSpecificationImpl.groovy:198)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.header(ValidatableResponseOptionsImpl.java:124)
+	at com.rfautomation.apitesting.tests.APITests.test1(APITests.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+2024-06-17T08:45:38,002 [main] INFO  (Logger.java:112) - [TestNG] Running:
+  C:\Users\roger\Development\Java\RESTAssured1\suites\restassuredapitest.xml
+
+2024-06-17T08:45:38,285 [main] INFO  (APITests.java:18) - test1 Test Execution started...
+2024-06-17T08:45:39,280 [main] INFO  (RestAssuredListener.java:22) - 
+ Method GET
+ URI => https://reqres.in/api/users?page=2
+ Request body => null
+ Response body => {
+    "page": 2,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "first_name": "Michael",
+            "last_name": "Lawson",
+            "avatar": "https://reqres.in/img/faces/7-image.jpg"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "first_name": "Lindsay",
+            "last_name": "Ferguson",
+            "avatar": "https://reqres.in/img/faces/8-image.jpg"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "first_name": "Tobias",
+            "last_name": "Funke",
+            "avatar": "https://reqres.in/img/faces/9-image.jpg"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "first_name": "Byron",
+            "last_name": "Fields",
+            "avatar": "https://reqres.in/img/faces/10-image.jpg"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://reqres.in/img/faces/11-image.jpg"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "first_name": "Rachel",
+            "last_name": "Howell",
+            "avatar": "https://reqres.in/img/faces/12-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2024-06-17T08:45:39,313 [main] INFO  (APITests.java:33) - test1 Test Execution ended...
+2024-06-17T09:42:17,616 [main] INFO  (Logger.java:112) - [TestNG] Running:
+  C:\Users\roger\AppData\Local\JetBrains\IdeaIC2024.1\temp-testng-customsuite.xml
+
+2024-06-17T09:52:39,422 [main] INFO  (Logger.java:112) - [TestNG] Running:
+  C:\Users\roger\AppData\Local\JetBrains\IdeaIC2024.1\temp-testng-customsuite.xml
+
+2024-06-17T09:57:43,532 [main] INFO  (Logger.java:112) - [TestNG] Running:
+  C:\Users\roger\AppData\Local\JetBrains\IdeaIC2024.1\temp-testng-customsuite.xml
+
+2024-06-17T09:57:45,161 [main] INFO  (RestAssuredListener.java:22) - 
+ Method POST
+ URI => https://restful-booker.herokuapp.com/booking
+ Request body => {"firstname":"api-testing","additionalneeds":"breakfast","bookingdates":{"checkin":"2024-03-25","checkout":"2024-03-30"},"totalprice":1000,"depositpaid":true,"lastname":"api-testing"}
+ Response body => {
+    "bookingid": 3195,
+    "booking": {
+        "firstname": "api-testing",
+        "lastname": "api-testing",
+        "totalprice": 1000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-03-25",
+            "checkout": "2024-03-30"
+        },
+        "additionalneeds": "breakfast"
+    }
+}
+2024-06-17T10:27:08,635 [main] INFO  (Logger.java:112) - [TestNG] Running:
+  C:\Users\roger\AppData\Local\JetBrains\IdeaIC2024.1\temp-testng-customsuite.xml
+
+2024-06-17T10:27:10,389 [main] INFO  (RestAssuredListener.java:22) - 
+ Method POST
+ URI => https://restful-booker.herokuapp.com/booking
+ Request body => {"firstname":"api-testing","additionalneeds":"breakfast","bookingdates":{"checkin":"2024-03-25","checkout":"2024-03-30"},"totalprice":1000,"depositpaid":true,"lastname":"api-testing"}
+ Response body => {
+    "bookingid": 2899,
+    "booking": {
+        "firstname": "api-testing",
+        "lastname": "api-testing",
+        "totalprice": 1000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-03-25",
+            "checkout": "2024-03-30"
+        },
+        "additionalneeds": "breakfast"
+    }
+}
+2024-06-17T13:29:15,302 [main] INFO  (Logger.java:112) - [TestNG] Running:
+  C:\Users\roger\AppData\Local\JetBrains\IdeaIC2024.1\temp-testng-customsuite.xml
+
+2024-06-17T13:29:17,185 [main] INFO  (RestAssuredListener.java:22) - 
+ Method POST
+ URI => https://restful-booker.herokuapp.com/booking
+ Request body => {"firstname":"api-testing","additionalneeds":"breakfast","bookingdates":{"checkin":"2024-03-25","checkout":"2024-03-30"},"totalprice":1000,"depositpaid":true,"lastname":"api-testing"}
+ Response body => {
+    "bookingid": 3953,
+    "booking": {
+        "firstname": "api-testing",
+        "lastname": "api-testing",
+        "totalprice": 1000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-03-25",
+            "checkout": "2024-03-30"
+        },
+        "additionalneeds": "breakfast"
+    }
+}
+2024-06-17T13:31:06,658 [main] INFO  (Logger.java:112) - [TestNG] Running:
+  C:\Users\roger\AppData\Local\JetBrains\IdeaIC2024.1\temp-testng-customsuite.xml
+
+2024-06-17T13:31:08,297 [main] INFO  (RestAssuredListener.java:22) - 
+ Method POST
+ URI => https://restful-booker.herokuapp.com/booking
+ Request body => {"firstname":"api-testing","additionalneeds":"breakfast","bookingdates":{"checkin":"2024-03-25","checkout":"2024-03-30"},"totalprice":1000,"depositpaid":true,"lastname":"api-testing"}
+ Response body => {
+    "bookingid": 4916,
+    "booking": {
+        "firstname": "api-testing",
+        "lastname": "api-testing",
+        "totalprice": 1000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-03-25",
+            "checkout": "2024-03-30"
+        },
+        "additionalneeds": "breakfast"
+    }
+}
+2024-06-17T13:31:09,448 [main] INFO  (RestAssuredListener.java:22) - 
+ Method GET
+ URI => https://restful-booker.herokuapp.com/booking/4916
+ Request body => null
+ Response body => {
+    "firstname": "api-testing",
+    "lastname": "api-testing",
+    "totalprice": 1000,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-03-25",
+        "checkout": "2024-03-30"
+    },
+    "additionalneeds": "breakfast"
+}
+2024-06-17T14:43:33,720 [main] INFO  (Logger.java:112) - [TestNG] Running:
+  C:\Users\roger\AppData\Local\JetBrains\IdeaIC2024.1\temp-testng-customsuite.xml
+
+2024-06-17T14:43:35,683 [main] INFO  (RestAssuredListener.java:22) - 
+ Method POST
+ URI => https://restful-booker.herokuapp.com/booking
+ Request body => {"firstname":"api-testing","additionalneeds":"breakfast","bookingdates":{"checkin":"2024-03-25","checkout":"2024-03-23"},"totalprice":1000,"depositpaid":true,"lastname":"api-testing"}
+ Response body => {
+    "bookingid": 1017,
+    "booking": {
+        "firstname": "api-testing",
+        "lastname": "api-testing",
+        "totalprice": 1000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-03-25",
+            "checkout": "2024-03-23"
+        },
+        "additionalneeds": "breakfast"
+    }
+}
+2024-06-17T14:43:36,831 [main] INFO  (RestAssuredListener.java:22) - 
+ Method GET
+ URI => https://restful-booker.herokuapp.com/booking/1017
+ Request body => null
+ Response body => {
+    "firstname": "api-testing",
+    "lastname": "api-testing",
+    "totalprice": 1000,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-03-25",
+        "checkout": "2024-03-23"
+    },
+    "additionalneeds": "breakfast"
+}
+2024-06-17T14:49:37,941 [main] INFO  (Logger.java:112) - [TestNG] Running:
+  C:\Users\roger\AppData\Local\JetBrains\IdeaIC2024.1\temp-testng-customsuite.xml
+
+2024-06-17T14:49:38,337 [main] INFO  (APITests.java:21) - test1 Test Execution started...
+2024-06-17T14:49:39,392 [main] INFO  (RestAssuredListener.java:22) - 
+ Method GET
+ URI => https://reqres.in/api/users?page=2
+ Request body => null
+ Response body => {
+    "page": 2,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "first_name": "Michael",
+            "last_name": "Lawson",
+            "avatar": "https://reqres.in/img/faces/7-image.jpg"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "first_name": "Lindsay",
+            "last_name": "Ferguson",
+            "avatar": "https://reqres.in/img/faces/8-image.jpg"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "first_name": "Tobias",
+            "last_name": "Funke",
+            "avatar": "https://reqres.in/img/faces/9-image.jpg"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "first_name": "Byron",
+            "last_name": "Fields",
+            "avatar": "https://reqres.in/img/faces/10-image.jpg"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://reqres.in/img/faces/11-image.jpg"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "first_name": "Rachel",
+            "last_name": "Howell",
+            "avatar": "https://reqres.in/img/faces/12-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2024-06-17T14:49:39,413 [main] INFO  (APITests.java:31) - test1 Test Execution ended...
+2024-06-17T14:49:49,780 [main] INFO  (Logger.java:112) - [TestNG] Running:
+  C:\Users\roger\AppData\Local\JetBrains\IdeaIC2024.1\temp-testng-customsuite.xml
+
+2024-06-17T14:49:50,123 [main] INFO  (APITests.java:21) - test1 Test Execution started...
+2024-06-17T14:49:51,047 [main] INFO  (RestAssuredListener.java:22) - 
+ Method GET
+ URI => https://reqres.in/api/users?page=2
+ Request body => null
+ Response body => {
+    "page": 2,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "first_name": "Michael",
+            "last_name": "Lawson",
+            "avatar": "https://reqres.in/img/faces/7-image.jpg"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "first_name": "Lindsay",
+            "last_name": "Ferguson",
+            "avatar": "https://reqres.in/img/faces/8-image.jpg"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "first_name": "Tobias",
+            "last_name": "Funke",
+            "avatar": "https://reqres.in/img/faces/9-image.jpg"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "first_name": "Byron",
+            "last_name": "Fields",
+            "avatar": "https://reqres.in/img/faces/10-image.jpg"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://reqres.in/img/faces/11-image.jpg"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "first_name": "Rachel",
+            "last_name": "Howell",
+            "avatar": "https://reqres.in/img/faces/12-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2024-06-17T14:49:51,075 [main] INFO  (APITests.java:31) - test1 Test Execution ended...
+2024-06-17T14:49:51,733 [main] INFO  (RestAssuredListener.java:22) - 
+ Method POST
+ URI => https://restful-booker.herokuapp.com/booking
+ Request body => {"firstname":"api-testing","additionalneeds":"breakfast","bookingdates":{"checkin":"2024-03-25","checkout":"2024-03-30"},"totalprice":1000,"depositpaid":true,"lastname":"api-testing"}
+ Response body => {
+    "bookingid": 6802,
+    "booking": {
+        "firstname": "api-testing",
+        "lastname": "api-testing",
+        "totalprice": 1000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-03-25",
+            "checkout": "2024-03-30"
+        },
+        "additionalneeds": "breakfast"
+    }
+}
+2024-06-17T14:49:52,831 [main] INFO  (RestAssuredListener.java:22) - 
+ Method GET
+ URI => https://restful-booker.herokuapp.com/booking/6802
+ Request body => null
+ Response body => {
+    "firstname": "api-testing",
+    "lastname": "api-testing",
+    "totalprice": 1000,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-03-25",
+        "checkout": "2024-03-30"
+    },
+    "additionalneeds": "breakfast"
+}

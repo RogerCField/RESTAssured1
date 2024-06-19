@@ -1,0 +1,87 @@
+2024-06-19T09:38:11,977 [main] INFO  (Logger.java:112) - [TestNG] Running:
+  C:\Users\roger\Development\Java\RESTAssured1\suites\DDTestingWithJson.xml
+
+2024-06-19T09:38:13,805 [main] INFO  (RestAssuredListener.java:22) - 
+ Method POST
+ URI => https://restful-booker.herokuapp.com/booking
+ Request body => {
+  "firstname" : "api testing by",
+  "lastname" : "testers talk",
+  "additionalneeds" : "breakfast",
+  "totalprice" : 1100,
+  "depositpaid" : true,
+  "bookingdates" : {
+    "checkin" : "",
+    "checkout" : ""
+  }
+}
+ Response body => {
+    "bookingid": 3363,
+    "booking": {
+        "firstname": "api testing by",
+        "lastname": "testers talk",
+        "totalprice": 1100,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "0NaN-aN-aN",
+            "checkout": "0NaN-aN-aN"
+        },
+        "additionalneeds": "breakfast"
+    }
+}
+2024-06-19T09:38:14,442 [main] INFO  (RestAssuredListener.java:22) - 
+ Method POST
+ URI => https://restful-booker.herokuapp.com/booking
+ Request body => {
+  "firstname" : "playwright api testing by",
+  "lastname" : "testers talk",
+  "additionalneeds" : "breakfast",
+  "totalprice" : 1100,
+  "depositpaid" : true,
+  "bookingdates" : {
+    "checkin" : "",
+    "checkout" : ""
+  }
+}
+ Response body => {
+    "bookingid": 3370,
+    "booking": {
+        "firstname": "playwright api testing by",
+        "lastname": "testers talk",
+        "totalprice": 1100,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "0NaN-aN-aN",
+            "checkout": "0NaN-aN-aN"
+        },
+        "additionalneeds": "breakfast"
+    }
+}
+2024-06-19T09:38:15,031 [main] INFO  (RestAssuredListener.java:22) - 
+ Method POST
+ URI => https://restful-booker.herokuapp.com/booking
+ Request body => {
+  "firstname" : "postman by",
+  "lastname" : "testers talk",
+  "additionalneeds" : "breakfast",
+  "totalprice" : 1100,
+  "depositpaid" : true,
+  "bookingdates" : {
+    "checkin" : "",
+    "checkout" : ""
+  }
+}
+ Response body => {
+    "bookingid": 3379,
+    "booking": {
+        "firstname": "postman by",
+        "lastname": "testers talk",
+        "totalprice": 1100,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "0NaN-aN-aN",
+            "checkout": "0NaN-aN-aN"
+        },
+        "additionalneeds": "breakfast"
+    }
+}
